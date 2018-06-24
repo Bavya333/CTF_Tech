@@ -12,7 +12,7 @@ app=Flask(__name__)
 #config MySQL
 app.config['MYSQL_HOST'] ='localhost'
 app.config['MYSQL_USER'] ='root'
-app.config['MYSQL_PASSWORD'] ='bavya123'
+app.config['MYSQL_PASSWORD'] ='******'
 app.config['MYSQL_DB'] ='Project_1'
 app.config['MYSQL_CURSORCLASS'] ='DictCursor'
 
