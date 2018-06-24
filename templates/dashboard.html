@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% block body%}
+{% if data==0 %}
+<h1 id="head">
+  <center>Your pending questions!</center>
+</h1>
+<hr>
+<h2>
+  <center><a class="btn btn-primary" href="/qn1" role="button">Go to Question 1</a></center><hr>
+  <center><a class="btn btn-primary" href="/qn2" role="button">Go to Question 2</a></center><hr>
+  <center><a class="btn btn-primary" href="/qn3" role="button">Go to Question 3</a></center><hr>
+  <center><a class="btn btn-primary" href="/qn4" role="button">Go to Question 4</a></center><hr>
+</h2>
+{% elif data==1 %}
+<h1 id="head">
+  <center>Your pending questions!</center>
+</h1>
+<hr>
+<h2>
+  <center><a class="btn btn-primary" href="/qn2" role="button">Go to Question 2</a></center><hr>
+  <center><a class="btn btn-primary" href="/qn3" role="button">Go to Question 3</a></center><hr>
+  <center><a class="btn btn-primary" href="/qn4" role="button">Go to Question 4</a></center><hr>
+</h2>
+{% elif data==2%}
+<h1 id="head">
+  <center>Your pending questions!</center>
+</h1>
+<hr>
+<h2>
+  <center><a class="btn btn-primary" href="/qn3" role="button">Go to Question 3</a></center><hr>
+  <center><a class="btn btn-primary" href="/qn4" role="button">Go to Question 4</a></center><hr>
+</h2>
+{% elif data==3%}
+<h1 id="head">
+  <center>Your pending questions!</center>
+</h1>
+<hr>
+<h2>
+  <center><a class="btn btn-primary" href="/qn4" role="button">Go to Question 4</a></center>
+</h2>
+{% else%}
+<h1 id="head">
+  <center>You have no pending questions!</center>
+</h1>
+<hr>
+<h2>
+<center><a class="btn btn-primary" href="/leaderboard" role="button">Go to Leaderboard!</a></center>
+</h2>
+{% endif %}
+{% endblock %}
